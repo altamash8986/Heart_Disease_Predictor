@@ -1,18 +1,16 @@
-# Heart Disease Prediction System 🫀
+# Heart Disease Prediction System 
 
 [![Python](https://img.shields.io/badge/python-v3.10-blue?logo=python)](https://www.python.org/)  
 [![Scikit-learn](https://img.shields.io/badge/scikit--learn-v1.2-green?logo=scikit-learn)](https://scikit-learn.org/stable/)  
 [![Pandas](https://img.shields.io/badge/pandas-v1.6-blue?logo=pandas)](https://pandas.pydata.org/)  
 [![Matplotlib](https://img.shields.io/badge/matplotlib-v3.7-orange?logo=matplotlib)](https://matplotlib.org/)  
 
-A **machine learning-based system** to predict the likelihood of **heart disease** in individuals using the **UCI Heart Disease dataset**.  
-This project implements a **Random Forest Classifier** with **data preprocessing, feature scaling, one-hot encoding, and model persistence**, providing users with a **ready-to-use CSV template for predictions**.
+This project predicts the likelihood of heart disease in individuals using the UCI Heart Disease dataset. It uses a Random Forest Classifier and includes data preprocessing, feature scaling, and one-hot encoding. Users can input patient data in CSV format to receive predictions. A sample CSV template is provided for easy input.
 
 ---
 
 ## Table of Contents
 
-- [Overview](#overview)  
 - [Features](#features)  
 - [Dataset](#dataset)  
 - [Installation](#installation)  
@@ -28,46 +26,28 @@ This project implements a **Random Forest Classifier** with **data preprocessing
 
 ---
 
-## Overview 🩺
-
-Heart disease is one of the leading causes of death globally. Predicting heart disease early can **save lives** and help doctors provide timely treatment.  
-This project uses a **Random Forest Machine Learning model** to classify whether a person is at risk of heart disease based on **clinical attributes**.  
-
-The system is **user-friendly**: users can input a CSV file of patient data and receive predictions instantly, along with a **sample CSV template** to guide input.
-
----
-
 ## Features ✨
 
-- Binary classification:  
-  - `0` = No Heart Disease  
-  - `1` = Heart Disease  
-- Automatically handles **missing values** in numeric and categorical columns  
-- **One-hot encoding** for categorical variables  
-- **StandardScaler** for feature scaling  
-- Visualizes **top 10 important features**  
-- Saves **trained model** and **scaler** for future predictions  
-- Provides **user template CSV** for easy data input  
-- Outputs **prediction CSV** for multiple patients at once  
+- Binary classification: `0 = No Heart Disease`, `1 = Heart Disease`  
+- Handles missing numeric and categorical values automatically  
+- One-hot encoding for categorical variables  
+- StandardScaler for feature scaling  
+- Visualizes top 10 important features  
+- Saves trained model and scaler for future predictions  
+- Provides user template CSV for easy data input  
+- Outputs prediction CSV for multiple patients at once  
 
 ---
 
 ## Dataset 📊
 
-**Source:** [UCI Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/heart+Disease)  
-
-**Features include:**  
-- Numeric: `age`, `trestbps` (resting blood pressure), `chol` (cholesterol), `thalach` (maximum heart rate), etc.  
-- Categorical: `sex`, `cp` (chest pain type), `fbs` (fasting blood sugar), `restecg` (resting ECG results), `exang` (exercise-induced angina), `slope`, `thal`  
-- Target: `num` (0 or 1 for absence/presence of heart disease)  
-
-The dataset has been preprocessed to **handle missing values, normalize numeric features, and encode categorical columns**.
+The dataset is from the UCI Heart Disease repository. Features include numeric columns like age, resting blood pressure, cholesterol, and maximum heart rate, and categorical columns like sex, chest pain type, fasting blood sugar, ECG results, exercise-induced angina, slope, and thal. The target variable `num` indicates the presence or absence of heart disease. The dataset is preprocessed to handle missing values, normalize numeric features, and encode categorical columns.
 
 ---
 
 ## Installation ⚙️
 
-1. **Clone the repository:**
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/heart-disease-prediction.git
