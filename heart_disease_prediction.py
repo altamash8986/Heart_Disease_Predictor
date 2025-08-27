@@ -50,7 +50,7 @@ print("\nClassification Report:\n", classification_report(y_test, y_pred_rf))
 feat_imp = pd.Series(rf_model.feature_importances_, index=X.columns)
 feat_imp.nlargest(10).plot(kind="barh", figsize=(8, 5))
 plt.title("Top 10 Important Features (Random Forest)")
-# plt.show()
+plt.show()
 
 # Save model and scaler
 joblib.dump(rf_model, "heart_disease_prediction.pkl")
@@ -141,3 +141,4 @@ user_df["heart_disease_prediction"] = pred
 
 # SHOW RESULT
 print(user_df)
+
