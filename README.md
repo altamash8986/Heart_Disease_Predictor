@@ -131,7 +131,7 @@ MIT License - see LICENSE file for details.
 ## Contact
 
 - **GitHub**: [altamsah8986](https://github.com/altamash8986)
-- **Email**: your.email@example.com
+- **Email**: mohdaltamash37986#gmail.com
 
 ---
 *Keywords: machine learning, heart disease prediction, random forest, healthcare AI, python*
